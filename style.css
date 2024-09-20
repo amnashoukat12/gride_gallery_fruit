@@ -1,0 +1,83 @@
+body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #3399ff, #9933ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+      
+        .filter-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: 2px solid;
+            background-color: transparent;
+            color: #333;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .filter-buttons .apple { border-color: #ff0000; }
+        .filter-buttons .banana { border-color: #ffcc00; }
+        .filter-buttons .cherry { border-color: #cc0000; }
+        .filter-buttons .coconut { border-color: #d0bfae; }
+        .filter-buttons .cranberry { border-color: #d72d56; }
+        .filter-buttons .cucumber { border-color: #6c9e6c; }
+        .filter-buttons .grapefruit { border-color: #ff6f61; }
+        .filter-buttons .lemon { border-color: #f7e04b; }
+        .filter-buttons .lime { border-color: #a4c639; }
+        .filter-buttons .mint { border-color: #98ff98; }
+        .filter-buttons .pineapple { border-color: #ffeb3b; }
+        .filter-buttons .watermelon { border-color: #ff4f4f; }
+
+        .filter-buttons button:hover,
+        .filter-buttons button.active {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            background-color: white;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
